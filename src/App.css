@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+i {
+  font-size: 3rem;
+  color: red;
+}
+
+.card-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: red;
+}
+
+.quote-card {
+  position: relative;
+  background-color: #fff;
+  width: 630px;
+  height: 300px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.39),
+  inset 0px 0px 10px 0px rgba(0,0,0,0.39);
+}
+
+.text-container {
+  display: flex;
+  gap: 20px;
+
+}
+
+.author {
+  align-self: flex-end;
+  font-weight: 700;
+  line-height: 4;
+}
+
+.next-btn {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: red;
+  right: 2rem;
+  bottom: 2rem;
+  box-shadow: 0px 0px 11px 0px rgba(0,0,0,0.44);
+  cursor: pointer;
+  border: none;
+  outline: none;
+  transition: all 0.3s;
+}
+
+.next-btn:hover {
+  transform: scale(1.07);
+}
+
+.next-btn i {
+  font-size: 40px;
+  color: #fff;
+}
+
+@media screen and (max-width: 320px) {
+  .quote-card {
+
+
+    width: 70%;
+    height: 500px;
+
+
+  }
+
+
+}
+
+
+@media screen and (max-width: 630px) {
+  .quote-card {
+
+
+    width: 90%;
+    height: 350px;
+
+
+  }
+
+
+}
+
+@media screen and (max-width: 320px) {
+  .quote-card {
+    width: 90%;
+    height: 550px;
+  }
+
+
+}
